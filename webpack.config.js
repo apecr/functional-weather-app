@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'myaccount.dist.js'
+    filename: 'weatherapp.dist.js'
   },
   module: {
     loaders: [ {
