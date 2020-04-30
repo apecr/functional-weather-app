@@ -1,0 +1,25 @@
+{
+  "name": "functional-weather-app",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "webpack:watch": "webpack --watch"
+  },
+  "keywords": [
+    "npm-library"
+  ],
+  "author": "Alberto Eyo <alberto.eyo@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.10.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "webpack": "^2.2.1"
+  }
+}
