@@ -5,7 +5,7 @@ const {
   getParamString,
   getOpenWeatherMapUrl,
 } = require('./../../src/utils/endpoints')
-const { WEATHER_API_KEY } = require('./../../src/utils/const')
+const WEATHER_API_KEY = process.env.API_KEY
 
 //        http://api.openweathermap.org/data/2.5/weather?q=Pontevedra&units=metric&appid=8d8f16f29fb30a4904cad0ebf21c1dbf
 // http://api.openweathermap.org/data/2.5/forecast/daily?q=Pontevedra&units=metric&appid=8d8f16f29fb30a4904cad0ebf21c1dbf&cnt=16
@@ -28,10 +28,12 @@ describe('Endpoints', () => {
       key1: 'value1',
       key2: 'value2',
     }
-    const url = getOpenWeatherMapUrl('http://api.openweathermap.org/data/2.5/')('api')(params)('Pontevedra')
-    const result = `http://api.openweathermap.org/data/2.5/api?q=Pontevedra&appid=${WEATHER_API_KEY}${getParamString(params)}`
+    const url = getOpenWeatherMapUrl('http://api.openweathermap.org/data/2.5/')(
+      'api'
+    )(params)('Pontevedra')
+    const result = `http://api.openweathermap.org/data/2.5/api?q=Pontevedra&appid=${WEATHER_API_KEY}${getParamString(
+      params
+    )}`
     expect(url).to.be.equal(result)
   })
 })
-
-

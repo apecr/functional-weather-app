@@ -1,4 +1,4 @@
-import { WEATHER_API_KEY } from './const'
+const WEATHER_API_KEY = process.env.API_KEY
 
 export const getParamString = (params = {}) =>
   Object.entries(params).reduce(
