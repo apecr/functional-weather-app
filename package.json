@@ -13,7 +13,7 @@
   "author": "Alberto Eyo <alberto.eyo@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "underscore": "^1.10.2"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
